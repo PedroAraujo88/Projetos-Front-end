@@ -1,0 +1,117 @@
+/* Global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    background: #000;
+    color: #fff;
+    line-height: 1.6;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    transition: background 0.5s ease;
+    width: 900px; /* Garantir que o contêiner ocupe toda a largura */
+    min-height: 500px; /* Mantém uma altura mínima, mas agora o layout se adapta */
+    margin-top: 30px;
+    padding: 20px;
+    box-sizing: border-box; /* Inclui o padding dentro da largura e altura */
+  }
+  
+  .content {
+    max-width: 600px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    margin-top: 39px;
+    margin-bottom: 30px;
+  }
+  
+  /* Título */
+  h1, h2 {
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilo para a temperatura */
+  .temperature {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 10px 0;
+  }
+  
+  /* Estilo para os ícones do clima */
+  .weather-icon {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+    animation: pulse 1.5s infinite;
+  }
+  
+  /* Animação para os ícones */
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  /* Cards para umidade, sensação térmica e pressão */
+/* Cards para umidade, sensação térmica e pressão */
+.subcards {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .card {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    border-radius: 10px;
+    width: 30%;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100px; /* Ajuste da altura para garantir o bom espaçamento */
+    word-wrap: break-word; /* Garante que o texto será quebrado em caso de excesso */
+    white-space: normal; /* Permite que o texto ocupe várias linhas */
+    box-sizing: border-box; /* Garante que o padding não afete o tamanho do card */
+  }
+  
+  .card p {
+    margin: 0; /* Remove o espaçamento padrão */
+    word-break: break-word; /* Garante que o texto será quebrado corretamente dentro do card */
+  }
+  
+  /* Para cards com mais de uma linha (umidade e sensação térmica) */
+  
+  /* Subcard com informações adicionais */
+  .subcard {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    color: #fff;
+  }
+  
+  
